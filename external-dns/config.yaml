@@ -1,3 +1,19 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: external-dns
+  namespace: external-dns
+spec:
+  encryptedData:
+    CF_API_TOKEN: AgAE5SaPP29Kl8c2AaqsCp1NNKk14Y/gUtAAqRIYOog9H775gq3XTPt+DFpwNPrGRXYXT1nvp3s2Apc4WqvKg3Zgl0h41xNz1WPdqtu5ItvXhdn3OLjAJKYu1rQUUfirnPgL73XIfvKJqsDAifITHt4NPUNfY0Oe37INNbRsWoAcTEIgt+J+sRWnxUiPAA3x9MkDrAnDaT2VOUQtHU6IF3o+ZSEecLxbpQNLZIAz5efAJf3tqEeldqHISyOOaYs5l5rtEPRMbEnh0/rYUBK2VH105xOydxtTVntPcp1aYEXsaVFr7ACr9ibv5ZZ9Ghg3MWYISCv1WFYg6a8dOWMwRlQxtJF/viyN48/MIeDrjUaEseTZ63YD52oqfESA5Nmit+w1YVjZMUMAz5XceuChKBph7W8+JQbrQmL6SewbkEYa4q6l0oyfjW4udH7nL19eOHk2eMh4+A3d47VlhNZyH6OFB8OvhKQjAjFVA5suS63+Yh7mtPT8+Hxy1lM/eM8SXVJ5r+v5Vuphqf13YBdGJtgGW33kJwgzEn8TqZRXMPoBuhtsXOYo7RW6kL3CsVrbR0WIAMd2ekLEB8cubcgAjrKj1rDF6YtamHWUyl2BOUjNrSTfhngJd8nyjoG3Zjt+KFQ7OatFvXKHXC6YqmGxjz7F9tVo+QJd9WM7XATolOc+xAQQodKS3HlvgLC8nUaN3woA51SwEccZA3IEuEOZVh86k8R9xQxwu3qfceFOedJ2NXBVbDr7WfSg
+  template:
+    metadata:
+      creationTimestamp: null
+      name: external-dns
+      namespace: external-dns
+    type: Opaque
+
 ---
 apiVersion: v1
 kind: ServiceAccount
